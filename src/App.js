@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Clock from './components/Clock';
 
 // 사용자 정의 컴포넌트
 function Greeting(props) {
@@ -21,15 +22,9 @@ function App() {
           <Greeting name={ "Pengsu" }/>
           <Greeting name={ "Pengsun" }/>
 
+          <Clock/>
+
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
