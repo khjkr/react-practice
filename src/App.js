@@ -1,14 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-const element = <div>This is JSX</div>
-
-function greeting(name) {
-  if(name == "Pengsu") {
-    return "Hello " + name;
-  } else {
-    return "Hello Guest";
-  }
+// 사용자 정의 컴포넌트
+function Greeting(props) {
+  return (
+    <div>
+      <h1>Hello { props.name }</h1>
+    </div>
+  );
 }
 
 function App() {
@@ -19,10 +18,8 @@ function App() {
         <p>
           Hello React!
 
-          { element }
-          <h1>
-            { greeting("Pengsu") }
-          </h1>
+          <Greeting name={ "Pengsu" }/>
+          <Greeting name={ "Pengsun" }/>
 
         </p>
         <a
