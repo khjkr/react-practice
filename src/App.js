@@ -4,7 +4,11 @@ import './App.css';
 const element = <div>This is JSX</div>
 
 function greeting(name) {
-  return "Hello " + name;
+  if(name == "Pengsu") {
+    return "Hello " + name;
+  } else {
+    return "Hello Guest";
+  }
 }
 
 function App() {
