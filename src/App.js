@@ -17,11 +17,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello React!
-
           <Greeting name={ "Pengsu" }/>
-          <Greeting name={ "Pengsun" }/>
-
           <Clock/>
 
         </p>
